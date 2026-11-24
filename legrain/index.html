@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Le Grain Cafeteria | Ponta Verde, Maceió</title>
+  <meta name="description" content="Café com essência de carinho. Cafés, croissants, doces e kits presente na Ponta Verde, em Maceió. Veja o cardápio e peça pelo WhatsApp.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#12382A">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Le Grain Cafeteria">
+  <meta property="og:description" content="Café com essência de carinho. Veja o cardápio e peça pelo WhatsApp.">
+  <meta property="og:image" content="https://fernandobalbino.github.io/Landing-page/legrain/img/og.jpg">
+  <meta property="og:url" content="https://fernandobalbino.github.io/Landing-page/legrain/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="fonts/young-serif.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#cardapio">Pular para o cardápio</a>
+
+  <div class="proto" id="proto">
+    <p>Protótipo de demonstração: itens e preços do cardápio são ilustrativos.</p>
+    <button type="button" class="proto-close" aria-label="Fechar aviso" data-close-proto>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+
+  <header class="top">
+    <a href="#inicio" class="top-logo" aria-label="Le Grain Cafeteria, voltar ao início">
+      <img src="img/logo-light.svg" alt="Le Grain Cafeteria" width="56" height="50">
+    </a>
+    <p class="status" data-status><span class="status-dot"></span><span data-status-text>Horário de hoje</span></p>
+    <a class="top-wa" data-wa="Olá, Le Grain! Vim pelo site." href="https://wa.me/5582981031989" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="i-fill"><use href="#i-wa"/></svg>
+    </a>
+  </header>
+
+  <main id="inicio">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bean" aria-hidden="true">
+        <img src="img/hero-torta.webp" alt="" width="1159" height="1405" fetchpriority="high">
+      </div>
+      <div class="hero-text">
+        <h1>Café com essência de carinho.</h1>
+        <p class="hero-lede"><span class="hero-place">Cafeteria na Ponta Verde, em Maceió.</span> Cafés, croissants folhados e doces de vitrine, para comer aqui ou levar.</p>
+        <div class="hero-actions">
+          <a href="#cardapio" class="btn btn-sand">Ver cardápio</a>
+          <a href="https://wa.me/5582981031989" data-wa="Olá, Le Grain! Vim pelo site e gostaria de fazer um pedido." target="_blank" rel="noopener" class="btn btn-line">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="i-fill"><use href="#i-wa"/></svg>
+            Pedir pelo WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NATAL -->
+    <section class="natal" aria-labelledby="natal-title">
+      <div class="wrap natal-head">
+        <h2 id="natal-title">Natal no Le Grain</h2>
+        <p>Sabores da temporada, por tempo limitado.</p>
+      </div>
+      <div class="rail" data-destaques></div>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section class="menu" id="cardapio" aria-labelledby="menu-title">
+      <div class="wrap menu-head">
+        <h2 id="menu-title">Cardápio</h2>
+        <label class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <span class="sr">Buscar no cardápio</span>
+          <input type="search" placeholder="Buscar no cardápio" data-search autocomplete="off">
+        </label>
+      </div>
+      <nav class="chips" aria-label="Categorias do cardápio">
+        <div class="chips-track" data-chips></div>
+      </nav>
+      <div class="wrap" data-menu></div>
+      <p class="wrap empty" data-empty hidden>Nenhum item encontrado. Tente outra palavra ou <a href="#" data-wa-link="Olá, Le Grain! Vocês têm ">pergunte no WhatsApp</a>.</p>
+    </section>
+
+    <!-- KITS -->
+    <section class="kits" id="kits" aria-labelledby="kits-title">
+      <div class="wrap kits-grid">
+        <figure class="kits-photo">
+          <img src="img/kit-mesa.webp" alt="Box presente Le Grain aberta sobre a mesa da cafeteria, com croissant, café, bolo e brownie" loading="lazy" width="960" height="1280">
+        </figure>
+        <div class="kits-text">
+          <h2 id="kits-title">Kits para presentear</h2>
+          <p>Croissant amarrado com sisal, café, fatia de bolo, brownie e um cartão com mensagem. Montamos a caixa para aniversários, Dia do Amigo, Natal e pedidos de empresa.</p>
+          <ul class="kits-list">
+            <li>Encomende com 1 dia de antecedência</li>
+            <li>Retirada na cafeteria ou entrega combinada</li>
+            <li>Cartão personalizado com o seu recado</li>
+          </ul>
+          <a href="https://wa.me/5582981031989" data-wa="Olá, Le Grain! Quero encomendar um kit presente." target="_blank" rel="noopener" class="btn btn-sand">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="i-fill"><use href="#i-wa"/></svg>
+            Encomendar um kit
+          </a>
+        </div>
+      </div>
+      <div class="kits-strip" role="list">
+        <img role="listitem" src="img/kit-fechado-sm.webp" alt="Caixa kraft fechada com laço verde e adesivo Le Grain" loading="lazy" width="603" height="800">
+        <img role="listitem" src="img/kit-croissant-sm.webp" alt="Croissant com etiqueta Feito com afeto" loading="lazy" width="600" height="800">
+        <img role="listitem" src="img/kit-cartao-sm.webp" alt="Copo de café Le Grain e cartão Feliz Dia do Amigo" loading="lazy" width="603" height="800">
+        <img role="listitem" src="img/kit-copo-sm.webp" alt="Copo kraft com adesivo da Le Grain e flores secas" loading="lazy" width="600" height="800">
+      </div>
+    </section>
+
+    <!-- VISITE -->
+    <section class="visit" id="visite" aria-labelledby="visit-title">
+      <div class="wrap visit-grid">
+        <div>
+          <h2 id="visit-title">Venha tomar um café</h2>
+          <address class="visit-address">
+            Rua Manoel Ribeiro da Rocha, 110<br>
+            Ponta Verde, Maceió, AL
+          </address>
+          <table class="hours" aria-label="Horário de funcionamento">
+            <tbody data-hours></tbody>
+          </table>
+          <div class="visit-actions">
+            <a class="btn btn-green" href="https://www.google.com/maps/search/?api=1&amp;query=Le%20Grain%20Cafeteria%2C%20Rua%20Manoel%20Ribeiro%20da%20Rocha%2C%20110%2C%20Ponta%20Verde%2C%20Macei%C3%B3" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              Como chegar
+            </a>
+            <a class="btn btn-ghost" href="https://www.instagram.com/legraincafeteria/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg>
+              @legraincafeteria
+            </a>
+          </div>
+        </div>
+        <div class="map">
+          <iframe title="Mapa da Le Grain Cafeteria" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Rua%20Manoel%20Ribeiro%20da%20Rocha%2C%20110%2C%20Ponta%20Verde%2C%20Macei%C3%B3%20-%20AL&amp;z=16&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-grid">
+      <img src="img/logo-light.svg" alt="Le Grain Cafeteria" width="110" height="98" class="foot-logo">
+      <p class="foot-tag">Café com essência de carinho.</p>
+      <nav class="foot-links" aria-label="Contato">
+        <a href="https://wa.me/5582981031989" data-wa="Olá, Le Grain! Vim pelo site." target="_blank" rel="noopener">WhatsApp (82) 98103-1989</a>
+        <a href="https://www.instagram.com/legraincafeteria/" target="_blank" rel="noopener">Instagram</a>
+        <a href="#cardapio">Cardápio</a>
+      </nav>
+      <p class="foot-credit">Protótipo desenvolvido por Fernando Balbino.</p>
+    </div>
+  </footer>
+
+  <!-- botão flutuante / sacola -->
+  <a class="fab" data-fab href="https://wa.me/5582981031989" data-wa="Olá, Le Grain! Vim pelo site." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true" class="i-fill"><use href="#i-wa"/></svg>
+  </a>
+  <button type="button" class="bagbar" data-bagbar hidden>
+    <span class="bagbar-count" data-bag-count>0</span>
+    <span class="bagbar-label">Ver sacola</span>
+    <span class="bagbar-total" data-bag-total>R$ 0,00</span>
+  </button>
+
+  <!-- detalhe do item -->
+  <dialog class="sheet" data-item-sheet aria-labelledby="item-name">
+    <div class="sheet-inner">
+      <button type="button" class="sheet-close" data-close aria-label="Fechar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="item-photo" data-item-photo></div>
+      <div class="item-body">
+        <h3 id="item-name" data-item-name></h3>
+        <p class="item-desc" data-item-desc></p>
+        <p class="item-price" data-item-price></p>
+        <div class="item-buy">
+          <div class="stepper" aria-label="Quantidade">
+            <button type="button" data-qty="-1" aria-label="Diminuir quantidade"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12h12"/></svg></button>
+            <output data-item-qty aria-live="polite">1</output>
+            <button type="button" data-qty="1" aria-label="Aumentar quantidade"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12h12M12 6v12"/></svg></button>
+          </div>
+          <button type="button" class="btn btn-green btn-grow" data-add>Adicionar à sacola</button>
+        </div>
+        <a class="item-direct" data-item-direct href="#" target="_blank" rel="noopener">Pedir só este pelo WhatsApp</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- sacola -->
+  <dialog class="sheet" data-bag-sheet aria-labelledby="bag-title">
+    <div class="sheet-inner bag">
+      <button type="button" class="sheet-close" data-close aria-label="Fechar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <h3 id="bag-title">Sua sacola</h3>
+      <ul class="bag-list" data-bag-list></ul>
+      <form class="bag-form" data-bag-form>
+        <fieldset>
+          <legend>Como prefere?</legend>
+          <label><input type="radio" name="modo" value="Retirar no balcão" checked> Retirar no balcão</label>
+          <label><input type="radio" name="modo" value="Comer na cafeteria"> Comer na cafeteria</label>
+          <label><input type="radio" name="modo" value="Encomenda para outro dia"> Encomenda</label>
+        </fieldset>
+        <label class="field">Seu nome
+          <input type="text" name="nome" autocomplete="given-name" placeholder="Para a equipe te chamar">
+        </label>
+        <label class="field">Observações
+          <textarea name="obs" rows="2" placeholder="Ex.: sem açúcar, horário de retirada"></textarea>
+        </label>
+        <p class="bag-total">Total estimado <strong data-bag-sum>R$ 0,00</strong></p>
+        <button type="submit" class="btn btn-wa btn-block">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="i-fill"><use href="#i-wa"/></svg>
+          Enviar pedido pelo WhatsApp
+        </button>
+        <p class="bag-note">O pedido chega pronto no WhatsApp da Le Grain. Pagamento e confirmação são combinados por lá.</p>
+        <button type="button" class="bag-clear" data-bag-clear>Esvaziar sacola</button>
+      </form>
+    </div>
+  </dialog>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26C2.16 6.45 6.6 2.01 12.05 2.01c2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.89-9.88 9.89zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.48-8.41z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></symbol>
+  </svg>
+
+  <script src="js/cardapio.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
